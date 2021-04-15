@@ -19,8 +19,8 @@ TINY_IMG_NUM = 512
 FAST_IMG_NUM = 5000
 
 # The path to data and image features.
-VQA_DATA_ROOT = 'data/vqa/'
-MSCOCO_IMGFEAT_ROOT = 'data/mscoco_imgfeat/'
+VQA_DATA_ROOT = '/data2/xinyi_wang/lxmert/data/vqa/'
+MSCOCO_IMGFEAT_ROOT = '/data2/xinyi_wang/lxmert/data/mscoco_imgfeat/'
 SPLIT2NAME = {
     'train': 'train2014',
     'valid': 'val2014',
@@ -51,7 +51,7 @@ class VQADataset:
         # Loading datasets
         self.data = []
         for split in self.splits:
-            self.data.extend(json.load(open("data/vqa/%s.json" % split)))
+            self.data.extend(json.load(open("/data2/xinyi_wang/lxmert/data/vqa/%s.json" % split)))
         print("Load %d data from split(s) %s." % (len(self.data), self.name))
 
         # Convert list to dict (for evaluation)
