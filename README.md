@@ -1,5 +1,7 @@
 # LXMERT: Learning Cross-Modality Encoder Representations from Transformers
 
+This repo is part of the [CMLE](https://github.com/WANGXinyiLinda/CMLE) project.
+
 **Our servers break again :(. I have updated the links so that they should work fine now. Sorry for the inconvenience. Please let me for any further issues. Thanks! --Hao, Dec 03**
 
 ## Introduction
